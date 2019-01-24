@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <script type="text/javascript">
+        function findMinInArray(array) {
+            var lengArray = array.length;
+            if (lengArray==0){
+                return "Mang rong";
+            }
+            let min = array[0];
+            for (let i = 0; i < lengArray; i++) {
+                if (min > array[i]) {
+                    min = array[i];
+                }
+            }
+            return min;
+        }
+    </script>
+</head>
+<body>
+<script type="text/javascript">
+    var arr1 = [3, 5, 1, 8, -3, 7, 8]
+    var arr2 = [7, 12, 6, 9, 20, 56, 89]
+    var arr3 = [0,-1,-4]
+    var arr4 = [0, 0, 0, 0, 0, 0]
+    findMinInArray(arr1);
+    findMinInArray: alert(findMinInArray(arr3));
+
+</script>
+</body>
+</html>
